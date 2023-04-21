@@ -1,0 +1,253 @@
+.sidebar {
+  display: none;
+}
+
+/* @media only screen and (max-width: 400px)  {
+  .navbar {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+} */
+
+@media only screen and (max-width: 960px) {
+
+  main {
+    position: relative;
+    top: 90px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .left-nav, .right-nav {
+    display: none;
+  }
+
+  .left-section {
+    justify-content: flex-start;
+  }
+
+  .middle-section {
+    width: 250px;
+  }
+
+  .right-section {
+    justify-content: flex-end;
+  }
+
+  #icon {
+    margin: 0 10px;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    align-items: center;
+    width: 50px;
+  }
+
+  .hamburger-icon i {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #2F70AF;
+  }
+
+  header {
+    width: calc(100% - 200px);
+    position: relative;
+    left: 200px;
+    position: fixed;
+    z-index: 100000;
+  }
+
+  .sidebar.close ~ header {
+    left: 0;
+    width: 100%;
+  }
+
+  .sidebar.close {
+    width: 0;
+    left: -200px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background: #001B30;
+    transition: all .5s ease;
+    /* display: none; */
+    z-index: 20000;
+    display: block;
+  }
+
+  /* .sidebar.close {
+    display: none;
+  } */
+
+  .sidebar .nav-links {
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar .nav-links li .category-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar .nav-links li:hover, .active-link {
+    background: #2F70AF;
+  }
+
+  .sidebar .nav-links li {
+    list-style: none;
+    position: relative;
+    transition: all .4s ease;
+  }
+  
+  .sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+
+  .sidebar .nav-links li .arrow {
+    color: white;
+    margin-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  .sidebar .nav-links li.showMenu .arrow {
+    transform: rotate(-180deg);
+  }
+  
+  .sidebar .nav-links li a .link-name {
+    font-size: 18;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .sidebar .nav-links li .sub-menu {
+    display: none;
+    margin-top: 0px;
+    background: #2F70AF;
+    padding: 6px 6px 14px 0px;
+  }
+  
+  .sidebar .nav-links li.showMenu .sub-menu {
+    display: block;
+  }
+
+  .sidebar .nav-links li .sub-menu a {
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 0;
+    height: 30px;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #book-overview-section {
+    height: 120vh;
+  }
+
+  .book-overview {
+    flex-direction: column;
+    height: 115vh;
+    flex-wrap: wrap;
+  }
+
+  .images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .big-img img {
+    max-width: 200px;
+  }
+
+  .small-img {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small-img img {
+    width: 10%;
+  }
+
+  .overview {
+    margin: 0 20px;
+  }
+
+  .book-name {
+    margin-bottom: 10px;
+  }
+
+  .book-name h3 {
+    font-size: 18px;
+  }
+  
+  .book-name h5 {
+    font-size: 17px;
+  }
+
+  .supplier-info,
+  .publisher-info,
+  .author-info {
+    margin: 0;
+  }
+
+  .button {
+    flex-direction: column;
+  }
+
+  .button button {
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 16px 50px;
+    width: 240px;
+    border-radius: 10px;
+  }
+
+  #description-section {
+    height: 120vh;
+  }
+
+  .description {
+    height: 115vh;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
